@@ -24,13 +24,13 @@
         <article><b>01</b><div><small>安装网络客户端</small><h3>安装 Tailscale</h3><p>从 Tailscale 官方网站下载安装。安装后不要使用默认官网账号登录。</p><a href="https://tailscale.com/download/windows" target="_blank" rel="noreferrer">打开 Tailscale 下载页 ↗</a></div></article>
         <article><b>02</b><div><small>接入公司网络</small><h3>使用公司控制服务器</h3><p>以管理员身份打开 PowerShell，复制并执行：</p><code>tailscale up --login-server=https://headscale.silitok.top</code><p>浏览器打开认证页面后，使用管理员单独提供的公司测试账号完成认证。</p></div></article>
         <article><b>03</b><div><small>安装应用</small><h3>下载 Windows 便携版</h3><p>下载后运行安装程序。若出现安全提示，请先核对文件名和来源。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-20260907-054014-portable.exe">下载 Windows 版 <span>98.7 MB</span></a><p class="checksum">SHA-256：86e21963…afaafbe</p></div></article>
-        <article><b>04</b><div><small>连接服务</small><h3>填写服务地址</h3><p>进入 Dash 设置，服务地址填写 <code class="inline">192.168.123.65</code>，端口填写 <code class="inline">9876</code>。点击“测试连接”，成功后保存。</p></div></article>
+        <article><b>04</b><div><small>连接服务</small><h3>联系运营人员获取配置</h3><p>进入 Dash 设置前，请联系运营人员获取当前有效的服务地址和端口。填写完成后点击“测试连接”，成功后保存。</p></div></article>
       </div>
       <div class="steps hidden" data-panel="macos">
         <article><b>01</b><div><small>安装网络客户端</small><h3>安装 Tailscale</h3><p>可在 App Store 搜索 Tailscale，或在终端执行：</p><code>brew install --cask tailscale</code></div></article>
         <article><b>02</b><div><small>接入公司网络</small><h3>登录公司控制服务器</h3><p>打开终端并执行：</p><code>tailscale login --login-server=https://headscale.silitok.top</code><p>浏览器打开认证页面后，使用管理员单独提供的公司测试账号完成认证。</p></div></article>
         <article><b>03</b><div><small>安装应用</small><h3>下载 macOS Apple 芯片版</h3><p>适用于 M1、M2、M3、M4 及后续 Apple 芯片 Mac。打开 DMG 后，将 Siltok Dash 拖入“应用程序”。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-arm64.dmg">下载 macOS 版 <span>132.5 MB</span></a><p class="checksum">SHA-256：6cd56e03…5f8b507</p></div></article>
-        <article><b>04</b><div><small>连接服务</small><h3>填写服务地址</h3><p>进入 Dash 设置，服务地址填写 <code class="inline">192.168.123.65</code>，端口填写 <code class="inline">9876</code>。点击“测试连接”，成功后保存。</p></div></article>
+        <article><b>04</b><div><small>连接服务</small><h3>联系运营人员获取配置</h3><p>进入 Dash 设置前，请联系运营人员获取当前有效的服务地址和端口。填写完成后点击“测试连接”，成功后保存。</p></div></article>
       </div>
     </section>
 
@@ -40,7 +40,7 @@
 
     <section class="faq" id="faq"><div class="section-head"><span>04</span><div><small>排查问题</small><h2>遇到问题先看这里</h2></div></div><div class="faq-grid">
       <details><summary>Tailscale 登录后仍未连接</summary><p>确认使用的是 <code>headscale.silitok.top</code>，客户端应显示 Connected 和当前设备地址。</p></details>
-      <details><summary>Dash 测试连接失败</summary><p>先确认 Tailscale 为 Connected，再检查地址 192.168.123.65 和端口 9876，前后不要有空格。</p></details>
+      <details><summary>Dash 测试连接失败</summary><p>先确认 Tailscale 为 Connected，再核对运营人员提供的服务地址和端口，确保填写准确且前后没有空格；仍无法连接时请联系运营人员。</p></details>
       <details><summary>页面中没有模型</summary><p>刷新或重启 Dash；仍没有模型时联系管理员确认服务状态和账号权限。</p></details>
       <details><summary>点击生成后任务失败</summary><p>确认 Tailscale 仍在线，保存错误提示、控制台信息和操作系统版本后联系管理员。</p></details>
       <details><summary>macOS 提示无法打开应用</summary><p>确认安装包来自本页面。在“系统设置 → 隐私与安全性”中查看系统提示，并按公司要求继续。</p></details>
