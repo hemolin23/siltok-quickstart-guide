@@ -1,0 +1,17 @@
+.task-category {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 14px;
+  align-items: baseline;
+  margin-top: 42px;
+}
+.task-category > span { color: var(--signal); font-size: 11px; font-weight: 900; letter-spacing: .12em; }
+.task-category h3 { margin: 0; font-size: 25px; }
+.task-category p { grid-column: 2; margin: 3px 0 0; color: var(--muted); }
+.single-task { grid-template-columns: 1fr; }
+.video-tasks { grid-template-columns: 1fr 1fr; }
+@media (max-width: 700px) {
+  .video-tasks { grid-template-columns: 1fr; }
+  .task-category { grid-template-columns: 1fr; }
+  .task-category p { grid-column: 1; }
+}
