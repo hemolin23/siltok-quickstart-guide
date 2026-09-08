@@ -7,9 +7,10 @@
   <title>Siltok 快速上手指南</title>
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="agreement.css">
 </head>
 <body>
-  <header class="topbar"><a href="#top" class="brand" aria-label="Siltok 首页"><img src="assets/siltok-logo-blue.png" alt="Siltok"></a><nav><a href="#steps">安装步骤</a><a href="#video">Windows 视频</a><a href="#faq">常见问题</a><a href="#support">联系管理员</a></nav></header>
+  <header class="topbar"><a href="#top" class="brand" aria-label="Siltok 首页"><img src="assets/siltok-logo-blue.png" alt="Siltok"></a><nav><a href="#steps">安装步骤</a><a href="#video">Windows 视频</a><a href="#agreement">测试协议</a><a href="#faq">常见问题</a><a href="#support">联系管理员</a></nav></header>
   <main id="top">
     <section class="hero">
       <div class="hero-copy"><span class="eyebrow">5 分钟快速上手</span><h1>接入公司网络，<br><em>开始用 Siltok。</em></h1><p>选择你的电脑，跟着页面逐步完成。看到 Tailscale 显示 Connected 后，再安装并配置 Siltok Dash。</p><div class="hero-actions"><a class="primary" href="#steps">开始安装</a><a class="secondary" href="#video">观看 Windows 视频</a></div></div>
@@ -22,20 +23,22 @@
       <div class="steps" data-panel="windows">
         <article><b>01</b><div><small>安装网络客户端</small><h3>安装 Tailscale</h3><p>从 Tailscale 官方网站下载安装。安装后不要使用默认官网账号登录。</p><a href="https://tailscale.com/download/windows" target="_blank" rel="noreferrer">打开 Tailscale 下载页 ↗</a></div></article>
         <article><b>02</b><div><small>接入公司网络</small><h3>使用公司控制服务器</h3><p>以管理员身份打开 PowerShell，复制并执行：</p><code>tailscale up --login-server=https://headscale.silitok.top</code><p>浏览器打开认证页面后，使用管理员单独提供的公司测试账号完成认证。</p></div></article>
-        <article><b>03</b><div><small>安装应用</small><h3>下载 Windows 便携版</h3><p>下载后运行安装程序。若出现安全提示，请先核对文件名和来源。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.0.0/siltok-dash-0.1.0-20260901-083807-portable.exe">下载 Windows 版 <span>97 MB</span></a></div></article>
+        <article><b>03</b><div><small>安装应用</small><h3>下载 Windows 便携版</h3><p>下载后运行安装程序。若出现安全提示，请先核对文件名和来源。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-20260907-054014-portable.exe">下载 Windows 版 <span>98.7 MB</span></a><p class="checksum">SHA-256：86e21963…afaafbe</p></div></article>
         <article><b>04</b><div><small>连接服务</small><h3>填写服务地址</h3><p>进入 Dash 设置，服务地址填写 <code class="inline">192.168.123.65</code>，端口填写 <code class="inline">9876</code>。点击“测试连接”，成功后保存。</p></div></article>
       </div>
       <div class="steps hidden" data-panel="macos">
         <article><b>01</b><div><small>安装网络客户端</small><h3>安装 Tailscale</h3><p>可在 App Store 搜索 Tailscale，或在终端执行：</p><code>brew install --cask tailscale</code></div></article>
         <article><b>02</b><div><small>接入公司网络</small><h3>登录公司控制服务器</h3><p>打开终端并执行：</p><code>tailscale login --login-server=https://headscale.silitok.top</code><p>浏览器打开认证页面后，使用管理员单独提供的公司测试账号完成认证。</p></div></article>
-        <article><b>03</b><div><small>安装应用</small><h3>下载 macOS 通用版</h3><p>适用于 Apple 芯片和 Intel Mac。打开 DMG 后，将 Siltok Dash 拖入“应用程序”。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.0.0/Siltok-Dash-2026083101-universal.dmg">下载 macOS 版 <span>225 MB</span></a></div></article>
+        <article><b>03</b><div><small>安装应用</small><h3>下载 macOS Apple 芯片版</h3><p>适用于 M1、M2、M3、M4 及后续 Apple 芯片 Mac。打开 DMG 后，将 Siltok Dash 拖入“应用程序”。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-arm64.dmg">下载 macOS 版 <span>132.5 MB</span></a><p class="checksum">SHA-256：6cd56e03…5f8b507</p></div></article>
         <article><b>04</b><div><small>连接服务</small><h3>填写服务地址</h3><p>进入 Dash 设置，服务地址填写 <code class="inline">192.168.123.65</code>，端口填写 <code class="inline">9876</code>。点击“测试连接”，成功后保存。</p></div></article>
       </div>
     </section>
 
     <section class="video-section" id="video"><div><span class="light-label">02 / WINDOWS WALKTHROUGH</span><h2>Windows 完整操作视频</h2><p>演示安装 Tailscale、连接公司网络、启动 Siltok Dash 和配置服务的完整过程。</p><a href="assets/windows-setup-guide-20260827.mp4" download>下载教学视频</a></div><video controls preload="metadata" playsinline poster="assets/windows-guide-poster.jpg"><source src="assets/windows-setup-guide-20260827.mp4" type="video/mp4">你的浏览器暂不支持视频播放。</video></section>
 
-    <section class="faq" id="faq"><div class="section-head"><span>03</span><div><small>排查问题</small><h2>遇到问题先看这里</h2></div></div><div class="faq-grid">
+    <section class="agreement" id="agreement"><div class="agreement-copy"><span>03 / AGREEMENT</span><h2>产品远程测试与保密协议</h2><p>当前仅开展远程产品测试。协议涵盖测试方式、反馈结构、账号安全、保密范围与责任边界，不包含内容发布、付费合作、设备交付或对外授权。</p><ul><li>乙方只需填写姓名和手机号</li><li>平台及账号没有或不涉及发布时可不填</li><li>测试内容约 70% 自主测试、30% 定向测试</li><li>测试周期由双方结合个人时间另行约定</li></ul><a class="agreement-download" href="assets/产品远程测试与保密协议.pdf" download>下载签署协议 PDF <span>3 页 · 780 KB</span></a></div><div class="agreement-card"><small>签署流程</small><ol><li><b>01</b><span><strong>阅读协议</strong>确认测试与保密边界</span></li><li><b>02</b><span><strong>填写信息</strong>姓名、手机号、测试周期</span></li><li><b>03</b><span><strong>双方签署</strong>乙方签名，甲方盖章</span></li></ol><p>甲方：北京硅基词元科技有限公司</p></div></section>
+
+    <section class="faq" id="faq"><div class="section-head"><span>04</span><div><small>排查问题</small><h2>遇到问题先看这里</h2></div></div><div class="faq-grid">
       <details><summary>Tailscale 登录后仍未连接</summary><p>确认使用的是 <code>headscale.silitok.top</code>，客户端应显示 Connected 和当前设备地址。</p></details>
       <details><summary>Dash 测试连接失败</summary><p>先确认 Tailscale 为 Connected，再检查地址 192.168.123.65 和端口 9876，前后不要有空格。</p></details>
       <details><summary>页面中没有模型</summary><p>刷新或重启 Dash；仍没有模型时联系管理员确认服务状态和账号权限。</p></details>
