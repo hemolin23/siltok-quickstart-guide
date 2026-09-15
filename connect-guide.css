@@ -69,3 +69,98 @@
 @media (max-width: 800px) {
   .connect-grid { grid-template-columns: 1fr; }
 }
+
+.hero:has(.quick-start) {
+  min-height: 720px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, .55fr);
+  gap: clamp(40px, 6vw, 88px);
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.quick-start h1 {
+  font-size: clamp(42px, 5.2vw, 70px);
+}
+
+.quick-intro {
+  margin-bottom: 22px;
+}
+
+.quick-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  max-width: 760px;
+}
+
+.quick-list li {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.quick-list li > b {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--signal);
+  color: #fff;
+  font-size: 17px;
+}
+
+.quick-list span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.quick-list strong {
+  font-size: 17px;
+}
+
+.quick-list small {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.ready-card strong {
+  font-size: 25px;
+}
+
+.ready-card a {
+  color: var(--signal);
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .hero:has(.quick-start) {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    padding-top: 52px;
+    padding-bottom: 60px;
+  }
+
+  .quick-start h1 {
+    font-size: clamp(39px, 12vw, 54px);
+  }
+
+  .quick-list li {
+    grid-template-columns: 36px minmax(0, 1fr);
+    padding: 13px;
+  }
+
+  .quick-list li > b {
+    width: 32px;
+    height: 32px;
+  }
+}
