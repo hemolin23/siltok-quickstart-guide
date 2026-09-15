@@ -164,3 +164,260 @@
     height: 32px;
   }
 }
+
+.compact-hero {
+  min-height: 500px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.compact-hero .hero-copy > p {
+  max-width: 720px;
+}
+
+.start-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.guided-flow {
+  --guide-blue: #0b68e8;
+  --guide-ice: #f4f8ff;
+  --guide-line: #d8e3f2;
+  padding: 84px max(8vw, 36px);
+  background: #fff;
+}
+
+.guide-step {
+  max-width: 1180px;
+  margin: 0 auto 30px;
+  padding: clamp(26px, 4vw, 48px);
+  border: 1px solid var(--guide-line);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.guide-step > header {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.guide-step > header > b {
+  color: #bdd0e9;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.guide-step header small,
+.system-name {
+  color: var(--guide-blue);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.guide-step h2 {
+  margin: 4px 0 8px;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+}
+
+.guide-step header p,
+.system-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.system-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.system-grid > section {
+  padding: 24px;
+  border-radius: 14px;
+  background: var(--guide-ice);
+  border: 1px solid #e1eaf6;
+}
+
+.system-grid h3 {
+  margin: 5px 0 8px;
+  font-size: 22px;
+}
+
+.micro-steps {
+  margin: 16px 0 0;
+  padding-left: 22px;
+  color: var(--ink);
+}
+
+.micro-steps li + li {
+  margin-top: 8px;
+}
+
+.codex-help {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--guide-blue);
+  background: #fff;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.codex-help b {
+  color: var(--ink);
+}
+
+.step-done,
+.success-banner {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: #edf5ff;
+}
+
+.step-done b,
+.success-banner b {
+  flex: 0 0 auto;
+  color: var(--guide-blue);
+}
+
+.step-contacts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 320px));
+  justify-content: center;
+  gap: 22px;
+}
+
+.step-contacts figure {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid var(--guide-line);
+  border-radius: 16px;
+}
+
+.step-contacts img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 5;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.step-contacts figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 4px 4px;
+}
+
+.step-contacts figcaption span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.final-check {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.final-check li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid var(--guide-line);
+  border-radius: 10px;
+}
+
+.final-check b {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--guide-blue);
+  color: #fff;
+}
+
+.success-banner {
+  background: #e9f8f0;
+}
+
+.success-banner b {
+  color: #16865b;
+}
+
+@media (max-width: 800px) {
+  .compact-hero {
+    min-height: auto;
+  }
+
+  .guided-flow {
+    padding: 54px 20px;
+  }
+
+  .guide-step {
+    padding: 24px 18px;
+    border-radius: 15px;
+  }
+
+  .guide-step > header {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .guide-step > header > b {
+    font-size: 38px;
+  }
+
+  .system-grid,
+  .final-check {
+    grid-template-columns: 1fr;
+  }
+
+  .step-contacts {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .step-contacts figure {
+    padding: 6px;
+  }
+
+  .step-contacts figcaption {
+    display: block;
+    padding: 9px 2px 2px;
+  }
+
+  .step-contacts figcaption span {
+    display: block;
+  }
+
+  .step-done,
+  .success-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+}

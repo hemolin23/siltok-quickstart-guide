@@ -11,44 +11,23 @@
   <link rel="stylesheet" href="connect-guide.css">
 </head>
 <body>
-  <header class="topbar"><a href="#top" class="brand" aria-label="Siltok 首页"><img src="assets/siltok-logo-blue.png" alt="Siltok"></a><nav><a href="#steps">安装步骤</a><a href="#video">Windows 视频</a><a href="#agreement">测试协议</a><a href="creator-feedback.html">创作者测试内容和反馈表格</a><a href="#faq">常见问题</a><a href="#support">联系管理员</a></nav></header>
+  <header class="topbar"><a href="#top" class="brand" aria-label="Siltok 首页"><img src="assets/siltok-logo-blue.png" alt="Siltok"></a><nav><a href="#steps">四步安装</a><a href="#agreement">测试协议</a><a href="creator-feedback.html">创作者测试内容和反馈表格</a><a href="#faq">常见问题</a><a href="#step-3">联系管理员</a></nav></header>
   <main id="top">
-    <section class="hero">
-      <div class="hero-copy quick-start"><span class="eyebrow">第一次使用，请按顺序操作</span><h1>照着 4 步，<br><em>开始用 Siltok。</em></h1><p class="quick-intro">不用自己配置网络，也不用记任何命令。请从第 1 步开始，完成一项再进行下一项。</p><ol class="quick-list"><li><b>1</b><span><strong>选择电脑并下载</strong><small>点击下方“开始第 1 步”，选择 Windows 或 macOS，下载安装包。</small></span></li><li><b>2</b><span><strong>安装并打开 Dash</strong><small>Windows 双击运行；Mac 打开 DMG，将 Siltok Dash 拖进“应用程序”。</small></span></li><li><b>3</b><span><strong>向运营人员要连接信息</strong><small>告诉运营人员你已经打开软件，获取本次测试的 IP 地址和端口。</small></span></li><li><b>4</b><span><strong>填写信息并确认模型</strong><small>在“新增主机”或“设置—服务连接”中填写，连接成功后打开控制台；看到模型列表就完成了。</small></span></li></ol><div class="hero-actions"><a class="primary" href="#steps">开始第 1 步：下载安装</a><a class="secondary" href="#connect">看第 4 步界面图</a></div></div>
-      <aside class="status-card ready-card"><span>你只需要准备</span><strong>电脑 + 运营人员</strong><ul><li>不需要输入终端命令</li><li>IP 地址和端口由运营提供</li><li>遇到报错，截图发给管理员</li></ul><a href="#support">找不到运营人员？点这里 ↓</a></aside>
+    <section class="hero compact-hero"><div class="hero-copy"><span class="eyebrow">第一次使用，请按顺序操作</span><h1>照着 4 步，<br><em>开始用 Siltok。</em></h1><p>每一步需要的按钮、说明和图片都放在对应栏目里。完成一栏，再继续下一栏。</p><a class="primary start-button" href="#steps">从第 1 步开始 ↓</a></div><aside class="status-card"><span>开始前只需准备</span><strong>一台电脑</strong><ul><li>不需要输入终端命令</li><li>连接信息由运营人员提供</li><li>遇到问题直接截图反馈</li></ul></aside></section>
+
+    <section class="guided-flow" id="steps">
+      <article class="guide-step" id="step-1"><header><b>01</b><div><small>选择版本并下载</small><h2>你用的是哪种电脑？</h2><p>看电脑系统，点击对应的蓝色按钮。请不要在微信内置浏览器中下载，复制本页链接到 Chrome、Edge 或 Safari 打开。</p></div></header><div class="system-grid"><section><span class="system-name">Windows</span><h3>Windows 电脑</h3><p>下载便携版，下载完可直接运行。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-20260907-054014-portable.exe">下载 Windows 版 <span>98.7 MB</span></a><p class="checksum">文件：siltok-dash…portable.exe<br>SHA-256：86e21963…afaafbe</p></section><section><span class="system-name">macOS</span><h3>苹果 Mac 电脑</h3><p>适用于 M1、M2、M3、M4 及后续 Apple 芯片。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-arm64.dmg">下载 macOS 版 <span>132.5 MB</span></a><p class="checksum">文件：siltok-dash-0.1.0-arm64.dmg<br>SHA-256：6cd56e03…5f8b507</p></section></div><div class="step-done"><b>下载完成后</b><span>在“下载”文件夹中找到安装包，然后进入第 2 步。</span></div></article>
+
+      <article class="guide-step" id="step-2"><header><b>02</b><div><small>安装并打开</small><h2>把 Siltok Dash 打开</h2><p>只看与你电脑对应的一栏。</p></div></header><div class="system-grid"><section><span class="system-name">Windows</span><h3>双击 EXE 文件</h3><ol class="micro-steps"><li>打开电脑的“下载”文件夹。</li><li>找到名称中含 <code>portable.exe</code> 的文件。</li><li>双击运行；若出现安全提示，先核对文件来自本页面。</li><li>等待 Siltok Dash 主页面打开。</li></ol></section><section><span class="system-name">macOS</span><h3>打开 DMG 文件</h3><ol class="micro-steps"><li>打开电脑的“下载”文件夹。</li><li>双击 <code>siltok-dash-0.1.0-arm64.dmg</code>。</li><li>将 Siltok Dash 拖进“应用程序”。</li><li>从“应用程序”中打开 Siltok Dash。</li></ol><div class="codex-help"><b>Mac 打不开？</b><span>把 DMG 拖进 Codex，对它说：“这是公司提供的 Siltok Dash，请帮我检查并打开；如需系统授权，请告诉我怎么操作。”</span></div></section></div><div class="step-done"><b>本步完成标志</b><span>你已经看到 Siltok Dash 主页面。</span></div></article>
+
+      <article class="guide-step" id="step-3"><header><b>03</b><div><small>获取连接信息</small><h2>添加运营人员企业微信</h2><p>任选一位扫码添加，发送：“我已经打开 Siltok Dash，请发我本次测试的 IP 地址和端口。”连接信息不会在公开网页展示。</p></div></header><div class="step-contacts"><figure><img src="assets/wecom-shigenjie.jpg" alt="石根洁企业微信二维码名片"><figcaption><strong>石根洁</strong><span>用户运营与产品测试</span></figcaption></figure><figure><img src="assets/wecom-linan.jpg" alt="李楠企业微信二维码名片"><figcaption><strong>李楠</strong><span>Siltok 企业微信</span></figcaption></figure></div><div class="step-done"><b>本步完成标志</b><span>运营人员已经把 IP 地址和端口发给你。</span></div></article>
+
+      <article class="guide-step" id="step-4"><header><b>04</b><div><small>连接并检查模型</small><h2>把 IP 和端口填进 Dash</h2><p>下面两种方法任选一种。图片里的连接信息已隐藏，请填写运营人员发给你的内容。</p></div></header><div class="connect-grid"><figure><div class="shot"><img src="assets/dash-add-host.png" alt="Siltok Dash 新增主机界面示意图"></div><figcaption><strong>方法 A：控制台 → 新增主机</strong><span>填写地址和端口，点击“检测并添加”。</span></figcaption></figure><figure><div class="shot"><img src="assets/dash-service-settings.png" alt="Siltok Dash 设置中的服务连接界面示意图"></div><figcaption><strong>方法 B：设置 → 服务连接</strong><span>填写后点击“测试连接”，成功后点击“保存”。</span></figcaption></figure></div><ol class="final-check"><li><b>1</b><span>看到“连接成功”。</span></li><li><b>2</b><span>点击左侧 Logo 下方第一个“控制台”按钮。</span></li><li><b>3</b><span>确认页面显示完整模型列表。</span></li></ol><div class="success-banner"><b>✓ 全部完成</b><span>看到模型列表后，就可以开始产品测试。</span></div></article>
     </section>
 
-    <section class="platforms" id="steps">
-      <div class="section-head"><span>01</span><div><small>选择设备</small><h2>你正在使用哪台电脑？</h2></div></div>
-      <div class="tabs" role="tablist"><button class="active" data-platform="windows">Windows</button><button data-platform="macos">macOS</button></div>
-      <div class="steps" data-panel="windows">
-        <article><b>01</b><div><small>下载应用</small><h3>下载 Windows 便携版</h3><p>下载完成后双击运行。若出现安全提示，请先核对文件名和来源。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-20260907-054014-portable.exe">下载 Windows 版 <span>98.7 MB</span></a><p class="checksum">SHA-256：86e21963…afaafbe</p></div></article>
-        <article><b>02</b><div><small>获取连接信息</small><h3>联系运营人员</h3><p>向运营人员获取本次测试使用的 IP 地址和端口。连接信息不在公开页面展示，请不要使用他人或过期配置。</p><a href="#support">联系管理员 ↓</a></div></article>
-        <article><b>03</b><div><small>连接服务</small><h3>新增主机或填写服务连接</h3><p>打开 Dash，点击左侧控制台的“新增主机”；也可以进入“设置—服务连接”。填写运营人员提供的 IP 地址和端口，点击“检测并添加”或“测试连接”，成功后保存。</p><a href="#connect">查看界面示意图 ↓</a></div></article>
-        <article><b>04</b><div><small>确认可用</small><h3>检查模型列表</h3><p>打开左侧边栏 Logo 下方的第一个“控制台”按钮，确认模型列表可以正常展示全部模型。若未显示，请刷新或联系运营人员。</p></div></article>
-      </div>
-      <div class="steps hidden" data-panel="macos">
-        <article><b>01</b><div><small>下载应用</small><h3>下载 macOS Apple 芯片版</h3><p>适用于 M1、M2、M3、M4 及后续 Apple 芯片 Mac。打开 DMG 后，将 Siltok Dash 拖入“应用程序”。</p><a class="download" href="https://github.com/hemolin23/siltok-quickstart-guide/releases/download/v1.1.0/siltok-dash-0.1.0-arm64.dmg">下载 macOS 版 <span>132.5 MB</span></a><p class="checksum">SHA-256：6cd56e03…5f8b507</p></div></article>
-        <article><b>02</b><div><small>获取连接信息</small><h3>联系运营人员</h3><p>向运营人员获取本次测试使用的 IP 地址和端口。连接信息不在公开页面展示，请不要使用他人或过期配置。</p><a href="#support">联系管理员 ↓</a></div></article>
-        <article><b>03</b><div><small>连接服务</small><h3>新增主机或填写服务连接</h3><p>打开 Dash，点击左侧控制台的“新增主机”；也可以进入“设置—服务连接”。填写运营人员提供的 IP 地址和端口，点击“检测并添加”或“测试连接”，成功后保存。</p><a href="#connect">查看界面示意图 ↓</a></div></article>
-        <article><b>04</b><div><small>确认可用</small><h3>检查模型列表</h3><p>打开左侧边栏 Logo 下方的第一个“控制台”按钮，确认模型列表可以正常展示全部模型。若应用无法打开，可让 Codex 协助检查安装包和系统权限。</p></div></article>
-      </div>
-    </section>
+    <section class="agreement" id="agreement"><div class="agreement-copy"><span>05 / AGREEMENT</span><h2>产品远程测试与保密协议</h2><p>当前仅开展远程产品测试。协议涵盖测试方式、反馈结构、账号安全、保密范围与责任边界，不包含内容发布、付费合作、设备交付或对外授权。</p><ul><li>乙方只需填写姓名和手机号</li><li>平台及账号没有或不涉及发布时可不填</li><li>测试内容约 70% 自主测试、30% 定向测试</li><li>测试周期由双方结合个人时间另行约定</li></ul><a class="agreement-download" href="assets/产品远程测试与保密协议.pdf" download>下载签署协议 PDF <span>3 页 · 780 KB</span></a></div><div class="agreement-card"><small>签署流程</small><ol><li><b>01</b><span><strong>阅读协议</strong>确认测试与保密边界</span></li><li><b>02</b><span><strong>填写信息</strong>姓名、手机号、测试周期</span></li><li><b>03</b><span><strong>双方签署</strong>乙方签名，甲方盖章</span></li></ol><p>甲方：北京硅基词元科技有限公司</p></div></section>
 
-    <section class="connect-guide" id="connect">
-      <div class="section-head"><span>02</span><div><small>连接服务</small><h2>两种入口，任选一种</h2><p>下图仅用于识别操作位置。图中的地址与端口已遮挡，实际信息请向运营人员获取。</p></div></div>
-      <div class="connect-grid">
-        <figure><div class="shot"><img src="assets/dash-add-host.png" alt="Siltok Dash 新增主机界面示意图"></div><figcaption><strong>方法 A：控制台 → 新增主机</strong><span>填写地址和端口后，点击“检测并添加”。</span></figcaption></figure>
-        <figure><div class="shot"><img src="assets/dash-service-settings.png" alt="Siltok Dash 设置中的服务连接界面示意图"></div><figcaption><strong>方法 B：设置 → 服务连接</strong><span>测试连接成功后，点击“保存”。</span></figcaption></figure>
-      </div>
-      <div class="verify-note"><b>最后一步</b><span>打开控制台，确认模型列表正常展示全部模型，即可开始测试。</span></div>
-    </section>
-
-    <section class="video-section" id="video"><div><span class="light-label">03 / WINDOWS WALKTHROUGH</span><h2>Windows 操作视频</h2><p>视频为早期版本界面演示；连接配置请以本页新版步骤为准，IP 地址与端口向运营人员获取。</p><a href="assets/windows-setup-guide-20260827.mp4" download>下载教学视频</a></div><video controls preload="metadata" playsinline poster="assets/windows-guide-poster.jpg"><source src="assets/windows-setup-guide-20260827.mp4" type="video/mp4">你的浏览器暂不支持视频播放。</video></section>
-
-    <section class="agreement" id="agreement"><div class="agreement-copy"><span>04 / AGREEMENT</span><h2>产品远程测试与保密协议</h2><p>当前仅开展远程产品测试。协议涵盖测试方式、反馈结构、账号安全、保密范围与责任边界，不包含内容发布、付费合作、设备交付或对外授权。</p><ul><li>乙方只需填写姓名和手机号</li><li>平台及账号没有或不涉及发布时可不填</li><li>测试内容约 70% 自主测试、30% 定向测试</li><li>测试周期由双方结合个人时间另行约定</li></ul><a class="agreement-download" href="assets/产品远程测试与保密协议.pdf" download>下载签署协议 PDF <span>3 页 · 780 KB</span></a></div><div class="agreement-card"><small>签署流程</small><ol><li><b>01</b><span><strong>阅读协议</strong>确认测试与保密边界</span></li><li><b>02</b><span><strong>填写信息</strong>姓名、手机号、测试周期</span></li><li><b>03</b><span><strong>双方签署</strong>乙方签名，甲方盖章</span></li></ol><p>甲方：北京硅基词元科技有限公司</p></div></section>
-
-    <section class="faq" id="faq"><div class="section-head"><span>05</span><div><small>排查问题</small><h2>遇到问题先看这里</h2></div></div><div class="faq-grid">
+    <section class="faq" id="faq"><div class="section-head"><span>06</span><div><small>排查问题</small><h2>遇到问题先看这里</h2></div></div><div class="faq-grid">
       <details><summary>从哪里获取 IP 地址和端口？</summary><p>请联系运营人员获取本次测试的有效配置。为避免泄露与使用过期信息，公开页面不展示具体地址和端口。</p></details>
       <details><summary>Dash 测试连接失败</summary><p>核对运营人员提供的 IP 地址和端口，确保填写准确且前后没有空格；仍无法连接时请保存错误截图并联系运营人员。</p></details>
       <details><summary>页面中没有模型</summary><p>刷新或重启 Dash；仍没有模型时联系管理员确认服务状态和账号权限。</p></details>
@@ -57,9 +36,7 @@
       <details><summary>微信里不能下载安装包</summary><p>请复制本页地址到 Chrome、Edge 或 Safari 打开，再点击下载按钮。</p></details>
     </div></section>
 
-    <section class="support" id="support"><div class="support-copy"><span>需要帮助？</span><h2>联系 Siltok 管理员</h2><p>请同时提供错误截图、设备名称、操作系统版本和你执行到的步骤。任选一位管理员，使用企业微信扫码添加。</p></div><div class="contact-grid"><figure><img src="assets/wecom-shigenjie.jpg" alt="石根洁企业微信二维码名片"><figcaption><strong>石根洁</strong><span>用户运营与产品测试</span></figcaption></figure><figure><img src="assets/wecom-linan.jpg" alt="李楠企业微信二维码名片"><figcaption><strong>李楠</strong><span>Siltok 企业微信</span></figcaption></figure></div></section>
   </main>
   <footer><img src="assets/siltok-logo-blue.png" alt="Siltok"><span>快速上手指南 · 北京硅基词元科技有限公司</span><a href="#top">返回顶部 ↑</a></footer>
-  <script src="script.js"></script>
 </body>
 </html>
