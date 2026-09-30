@@ -371,6 +371,138 @@
   color: #16865b;
 }
 
+.install-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.install-notes section {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 15px 17px;
+  border-left: 3px solid var(--guide-blue);
+  background: #f8faff;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.install-notes b {
+  color: var(--ink);
+}
+
+.guide-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 20px;
+  align-items: end;
+  padding: 22px;
+  border-radius: 14px;
+  background: var(--guide-ice);
+  border: 1px solid #e1eaf6;
+}
+
+.guide-summary ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guide-summary li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.guide-summary li b {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--guide-blue);
+  color: #fff;
+  font-size: 13px;
+}
+
+.guide-pdf-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 16px;
+  border-radius: 9px;
+  background: var(--midnight);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.guide-pdf-link span {
+  color: #b9cbe4;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.guide-pages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.guide-pages figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--guide-line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.guide-pages a,
+.guide-pages img {
+  display: block;
+}
+
+.guide-pages img {
+  width: 100%;
+  height: auto;
+}
+
+.guide-pages figcaption {
+  padding: 12px 14px;
+  border-top: 1px solid var(--guide-line);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.guide-contact {
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid var(--guide-line);
+}
+
+.guide-contact > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.guide-contact > div:first-child b {
+  font-size: 22px;
+}
+
+.guide-contact > div:first-child span {
+  color: var(--muted);
+}
+
 @media (max-width: 800px) {
   .compact-hero {
     min-height: auto;
@@ -396,8 +528,20 @@
   }
 
   .system-grid,
-  .final-check {
+  .final-check,
+  .install-notes,
+  .guide-summary,
+  .guide-summary ol {
     grid-template-columns: 1fr;
+  }
+
+  .guide-pages {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-pages figure {
+    max-width: 560px;
+    margin: 0 auto;
   }
 
   .connect-grid {
